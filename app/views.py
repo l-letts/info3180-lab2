@@ -8,6 +8,7 @@ This file creates your application.
 from app import app
 from flask import render_template, request, redirect, url_for, flash
 import time
+import datetime
 
 
 ###
@@ -28,14 +29,15 @@ def about():
 ##Step 1
 @app.route('/profile/')
 def profile():
-    return render_template('profile.html') 
+    Datetime = myear()
+    return render_template('profile.html', Date=Datetime) 
     
 ##Step 4 - Date joined----check
-def format_date_joined(month,year):
-    myear = time.strftime("%m/%Y")
-    return myear
-    
-
+def myear():
+    localtime = time.localtime(time.time())
+    localtime = time.mktime(localtime)
+    Datetime = time.strftime("%b %d %Y", time.gmtime(localtime))
+    return Datetime
 
 ###
 # The functions below should be applicable to all Flask apps.
