@@ -18,6 +18,11 @@ h2{
     text-align: center;
     color: aliceblue;
 }
+
+h3{
+    text-align: center;
+    color: #00ccff;
+}
 p{
     padding: 20px;
     line-height: 30px;
@@ -29,8 +34,7 @@ p{
     padding-top: 20px;
     border-radius: 15px 15px 0px 0px;
     padding-bottom: 20px;
-    
-    background: url(static/pp2.jpg);
+    background-color: #00ccff;
     
     background-repeat: no-repeat;
     background-attachment:fixed;
@@ -58,6 +62,7 @@ p{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
     
     filter: drop-shadow(0px 10px 5px rgba(128, 128, 128, 0.49));
     margin-top: 30px;
@@ -65,19 +70,18 @@ p{
 
 .inline_stats{
     display: flex;
-    margin-left: 35%;
+    margin-left: 30%;
     margin-bottom: 30px;
+    
 }
 .stats>div{
 /*    width: 10%;*/
 /*    background-color: aliceblue;*/
     padding-left: 25px;
     text-align: center;
+    color: #00ccff
 }
 
-.title{
-    color: darkgray;
-}
 
 .button {
     -moz-box-shadow: inset 0px 1px 3px 0px #91b8b3;
@@ -97,9 +101,12 @@ p{
     padding: 10px 50px;
     text-decoration: none;
     text-shadow: 0px -1px 0px #757777;
+    
 }
 
 .button:hover {
-    background-color: #6b8eb6;
-    color: #f7f7f1;
+    background-color: #00ccff;
+    color: white;
+     text-decoration: none;
+     
 }
